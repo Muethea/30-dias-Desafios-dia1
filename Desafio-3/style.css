@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pink {
+    height: 21rem;
+    width: 100%;
+    background: pink;
+}
+
+.white {
+    display: flex;
+    align-items: center;
+    height: 21rem;
+    width: 100%;
+    background: wheat;
+    overflow: visible;
+}
+
+p {
+    font: 700 2rem 'Courier New';
+    animation: textColor 5s linear 2s infinite;
+    position: relative;
+    animation-delay: 2s;
+}
+
+@keyframes textColor {
+    0% {
+        font-family: 'Courier New', Courier, monospace;
+        font: 700 2rem;
+        right: 0%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.over {
+    justify-content: center;
+    display: flex;
+}
+
+body {
+    background: white;
+}
