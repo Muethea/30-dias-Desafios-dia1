@@ -10,6 +10,8 @@
 }
 
 .white {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     height: 21rem;
@@ -23,16 +25,16 @@ p {
     animation: textColor 5s linear 2s infinite;
     position: relative;
     animation-delay: 2s;
+    animation-iteration-count: 3;
 }
 
 @keyframes textColor {
     0% {
-        font-family: 'Courier New', Courier, monospace;
-        font: 700 2rem;
-        right: 0%;
+        transform: translate(0, -50%);
     }
     100% {
-        right: 100%;
+        color: red;
+        transform: translate(-50%, -50%);
     }
 }
 
